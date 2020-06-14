@@ -38,10 +38,12 @@ pipeline {
             always {
                 junit 'results/cypress-report.xml'
             }
+        }
 
-                       always {
-                            html 'report:generate": "marge cypress/results/mochawesome-bundle.json -o cypress/reports/html'
-                        }
+        post {
+            always {
+             report 'report:generate": "marge cypress/results/mochawesome-bundle.json -o cypress/reports/html'
+            }
         }
     }
 }
