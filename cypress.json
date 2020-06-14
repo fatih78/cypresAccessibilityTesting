@@ -2,16 +2,21 @@
   "projectId": "95y49u",
   "chromeWebSecurity": false,
 
-  "reporter": "junit",
-  "reporterOptions": {
-    "mochaFile": "results/cypress-report.xml",
-    "toConsole": true
-},
   "reporterEnabled": "mochawesome",
   "mochawesomeReporterOptions": {
     "reportDir": "results/json",
     "overwrite": false,
     "html": false,
     "json": true
+  },
+
+  "reporter": "./node_modules/mochawesome/src/mochawesome.js",
+  "reporterOptions": {
+    "reportDir": "cypress/reports/separate-reports",
+    "overwrite": false,
+    "html": false,
+    "json": true,
+    "mochaFile": "results/cypress-report.xml",
+    "toConsole": true
   }
 }
