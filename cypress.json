@@ -10,17 +10,11 @@
     "json": true
   },
 
-  "reporter": "./node_modules/mochawesome/src/mochawesome.js",
+  "reporter": "mochawesome",
   "reporterOptions": {
-    "reportDir": "cypress/reports/separate-reports",
+    "reportDir": "cypress/results",
     "overwrite": false,
-    "html": true,
-    "json": true,
-    "mochaFile": "results/cypress-report.xml",
-    "toConsole": true,
-    "saveHtml": true,
-    "showFailed": true,
-    "showPassed": true,
-    "showPending": true
+    "html": false,
+    "json": true
   }
 }
