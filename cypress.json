@@ -1,4 +1,9 @@
 {
   "projectId": "95y49u",
-  "chromeWebSecurity": false
-}
+  "chromeWebSecurity": false,
+
+  "reporter": "junit",
+  "reporterOptions": {
+    "mochaFile": "results/cypress-report.xml",
+    "toConsole": true
+}}
