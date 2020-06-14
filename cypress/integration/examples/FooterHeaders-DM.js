@@ -22,6 +22,8 @@ describe('Footer DM', function() {
   })
          Cypress.on('uncaught:exception', (err, runnable) => {
         return false
-    })  
+    })
+
+        Cypress.runHTMLreport()  
         
 })
