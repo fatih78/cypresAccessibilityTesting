@@ -1,8 +1,9 @@
 {
     "devDependencies": {
+        "concurrently": "^5.2.0",
         "cypress": "3.4.1"
     },
-
+    "cypress:ci": "concurrently \"cypress run\" --kill-others \"ng serve\" --success first",
     "name": "dynamic-tests",
     "version": "1.0.0",
     "description": "Create Cypress tests dynamically from data",
@@ -11,4 +12,5 @@
         "cypress:run": "../../node_modules/.bin/cypress run",
         "test:ci": "npm run cypress:run",
         "test:ci:windows": "bin-up cypress run"
-}}
+    }
+}
