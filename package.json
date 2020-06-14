@@ -1,7 +1,9 @@
 {
     "devDependencies": {
         "concurrently": "^5.2.0",
-        "cypress": "3.4.1"
+        "cypress": "^3.4.1",
+        "start-server-and-test": "x.x.x",
+        "http-server": "x.x.x"
     },
     "cypress:ci": "concurrently \"cypress run\" --kill-others \"ng serve\" --success first",
     "name": "dynamic-tests",
@@ -11,6 +13,9 @@
         "cypress:open": "../../node_modules/.bin/cypress open",
         "cypress:run": "../../node_modules/.bin/cypress run",
         "test:ci": "npm run cypress:run",
-        "test:ci:windows": "bin-up cypress run"
+        "test:ci:windows": "bin-up cypress run",
+        "ci:serve": "ng build && http-server dist -p 8080",
+        "cy:run": "cypress run",
+        "cy:ci": "start-server-and-test ci:serve http://localhost:8080 cy:run"
     }
 }
