@@ -6,4 +6,12 @@
   "reporterOptions": {
     "mochaFile": "results/cypress-report.xml",
     "toConsole": true
-}}
+},
+  "reporterEnabled": "mochawesome",
+  "mochawesomeReporterOptions": {
+    "reportDir": "results/json",
+    "overwrite": false,
+    "html": false,
+    "json": true
+  }
+}
