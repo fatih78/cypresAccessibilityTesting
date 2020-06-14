@@ -129,21 +129,20 @@ Cypress.Commands.add("setSessionCookieBe", function(brandDomain) {
           path : '/',
           expires: sessionExpireDate})
 
-}
+});
 
+//  Cypress.Commands.add("runHTMLreport", function() {
+//         const cypress = require('cypress')
+//         const fse = require('fs-extra')
+//         const { merge } = require('mochawesome-merge')
+//         const generator = require('mochawesome-report-generator')
 
-Cypress.Commands("runHTMLreport") , function(){
-        const cypress = require('cypress')
-        const fse = require('fs-extra')
-        const { merge } = require('mochawesome-merge')
-        const generator = require('mochawesome-report-generator')
+//         async function runTests() {
+//         await fse.remove('mochawesome-report')
+//         const { totalFailed } = await cypress.run()
+//         const jsonReport = await merge()
+//         await generator.create(jsonReport)
+//         process.exit(totalFailed)
 
-    async function runTests() {
-        await fse.remove('mochawesome-report')
-        const { totalFailed } = await cypress.run()
-        const jsonReport = await merge()
-        await generator.create(jsonReport)
-        process.exit(totalFailed)
-  }
- }
-);
+// }});
+
