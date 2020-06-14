@@ -5,16 +5,18 @@
   "reporterEnabled": "mochawesome",
   "mochawesomeReporterOptions": {
     "reportDir": "results/json",
-    "overwrite": false,
+    "overwrite": true,
     "html": false,
-    "json": true
+    "json": true,
+    "video": false
   },
 
   "reporter": "mochawesome",
   "reporterOptions": {
     "reportDir": "cypress/results",
-    "overwrite": false,
+    "overwrite": true,
     "html": false,
-    "json": true
+    "json": true,
+    "video": false
   }
 }
