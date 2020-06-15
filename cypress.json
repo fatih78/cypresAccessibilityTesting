@@ -2,20 +2,11 @@
   "projectId": "95y49u",
   "chromeWebSecurity": false,
 
-  "reporterEnabled": "mochawesome",
-  "mochawesomeReporterOptions": {
-    "reportDir": "results/json",
-    "overwrite": true,
+  "reporter": "mochawesome",
+  "reporterOptions": {
+    "reportDir": "cypress/results",
+    "overwrite": false,
     "html": false,
-    "json": true,
-    "video": false,
+    "json": true
 
-    "reporter": "mochawesome",
-    "reporterOptions": {
-      "reportDir": "cypress/results",
-      "overwrite": true,
-      "html": false,
-      "json": true
-    }
-  }
-}
+}}
