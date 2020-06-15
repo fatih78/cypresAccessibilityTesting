@@ -1,7 +1,7 @@
 {
     "devDependencies": {
         "concurrently": "^5.2.0",
-        "cypress": "^4.7.0",
+        "cypress": "^4.8.0",
         "start-server-and-test": "x.x.x",
         "http-server": "x.x.x"
     },
