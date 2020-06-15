@@ -20,6 +20,5 @@
         "delete:reports": "del /F/Q/S cypress\\results\\*.*",
         "prereport": "npm run delete:reports",
         "report": "cypress run"
-    },
-
+    }
 }
