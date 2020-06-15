@@ -15,8 +15,7 @@
       "reportDir": "cypress/results",
       "overwrite": true,
       "html": false,
-      "json": true,
-      "video": false
+      "json": true
     }
   }
 }

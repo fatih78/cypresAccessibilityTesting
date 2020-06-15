@@ -16,7 +16,10 @@
         "test:ci:windows": "bin-up cypress run",
         "ci:serve": "ng build && http-server dist -p 8080",
         "cy:ci": "start-server-and-test ci:serve http://localhost:8080 cy:run",
-        "cy:run": "node scripts/cypress.js"
+        "cy:run": "node scripts/cypress.js",
+        "delete:reports": "del /F/Q/S cypress\\results\\*.*",
+        "prereport": "npm run delete:reports",
+        "report": "cypress run"
+    },
 
-    }
 }
