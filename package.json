@@ -30,6 +30,7 @@
         "delete:reports": "del /F/Q/S cypress\\results\\*.*",
         "prereport": "npm run delete:reports",
         "report": "cypress run",
-        "generate-report": "marge mochawesome.json"
+        "generate-report": "marge mochawesome.json",
+        "report-generate": "marge cypress/results/mochawesome-bundle.json -o cypress/reports/html"
     }
 }
