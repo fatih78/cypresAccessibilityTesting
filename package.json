@@ -28,7 +28,7 @@
         "cy:ci": "start-server-and-test ci:serve http://localhost:8080 cy:run",
         "cy:run": "node scripts/cypress.js",
         "delete:reports": "del /F/Q/S cypress\\results\\*.*",
-        "prereport": "npm run delete:reports",
+        "prereport": "rm -rf mochawesome-report",
         "report": "cypress run",
         "generate-report": "marge mochawesome.json",
         "report-generate": "marge cypress/results/mochawesome-bundle.json -o cypress/reports/html"
