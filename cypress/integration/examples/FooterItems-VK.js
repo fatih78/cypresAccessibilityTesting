@@ -54,7 +54,7 @@ describe('Footer VK', function() {
        .should('contain', 'Navigeer')
   })
 
-    it('VK Footer URLS', function()  {
+  it('VK Footer URLS', function()  {
       cy.get('.app-footer__list-item')
         .find('a')
           .should($a => {
