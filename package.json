@@ -1,7 +1,7 @@
 {
     "devDependencies": {
         "concurrently": "^5.2.0",
-        "cypress": "^4.8.0",
+        "cypress": "4.8.0",
         "cypress-cucumber-preprocessor": "^1.10.0",
         "cypress-dark": "^1.7.10",
         "cypress-file-upload": "^4.0.7",
