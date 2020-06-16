@@ -43,7 +43,7 @@ before(() => {
 
   it('HM Footer Headers', function() {
 
-   cy.disableCookiewallBE('beta.humo.be')
+   cy.disableCookiewallBE('.humo.be')
     cy.visit(hmurlprod)
     cy.get('.app-footer__column')
        .should('contain', 'Algemeen')

@@ -11,23 +11,29 @@ describe('Footer Parool', function() {
     Cypress.Cookies.preserveOnce("sessionid");
   });
 
-    const meururls = (
-      '/login',
-      '/logout',
-      '/search',
-      '/feedback-web',
-      'https://www.parool.nl/abonnementen/abonnementen/hp/?otag=t2ejen&utm_source=hp&utm_medium=interne_referral&utm_campaign=alwayson&utm_content=MENU_ITEM&URL_referrer=https%3A%2F%2Fwww.parool.nl%2F',
-      'https://www.parool.nl/abonnementen/abonnementen/hp/?otag=t2ejen&utm_source=hp&utm_medium=interne_referral&utm_campaign=alwayson&utm_content=MENU_ITEM&URL_referrer=https%3A%2F%2Fwww.parool.nl%2F',
-      'https://myaccount.parool.nl/',
-      '/nieuwsbrief',
-      'https://krant.parool.nl',
-      'https://www.topics.nl/',
-      'https://webwinkel.parool.nl/',
-      'https://www.parool.nl/tipderedactie/',
-      'https://www.dpgmedia.nl/gebruiksvoorwaarden',
-      'https://www.dpgmedia.nl/privacy',
-      '/cookiewall/info'
-      )
+  const footerurls = (
+    'https://www.parool.nl/service/contact',
+    'https://www.dpgmedia.nl/privacy',
+    'https://www.parool.nl/abonnementsvoorwaarden',
+    'https://www.dpgmedia.nl/gebruiksvoorwaarden',
+    'https://www.parool.nl/cookiewall/info',
+    'https://www.parool.nl/service/',
+    'https://www.parool.nl/service/bezorging',
+    'https://myaccount.parool.nl',
+    'https://www.parool.nl/service/vakantie',
+    'https://www.dpgmedia.nl/merk/hetparool',
+    'https://www.dpglosseverkoop.nl/tornl_j2ee/pag/pve_index.jsp',
+    'https://www.parool.nl/abonnementen/abonnementen/hp/?otag=t2ejen&utm_source=hp&utm_medium=interne_referral&utm_content=footer&utm_campaign=alwayson',
+    '/nieuwsbrief',
+    'http://krant.parool.nl/',
+    'https://winkel.parool.nl/',
+    'https://meer.parool.nl/',
+    '/rss/feeds',
+    'https://itunes.apple.com/nl/app/parool.nl-mobile/id427597105?mt=8',
+    'https://www.facebook.com/paroolnl/',
+    'https://twitter.com/parool',
+    '/archief'
+    )
 
   it('HP Footer Headers', function() {
 
