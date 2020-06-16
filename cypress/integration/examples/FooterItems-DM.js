@@ -55,6 +55,7 @@ describe('Footer DM', function() {
           return Cypress.$(el).attr('href')})
           expect(hrefs.get()).to.contain(footerurls)
   })
+      })
          Cypress.on('uncaught:exception', (err, runnable) => {
         return false
     })
