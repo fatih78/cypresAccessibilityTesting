@@ -1,6 +1,5 @@
 
 describe('Footer VK', function() {
-  var vkurl = 'https://vkgo:vkgo@www.acceptance.volkskrant.nl/'
   var vkurlprod = 'https://www.volkskrant.nl/'
 
   before(() => {

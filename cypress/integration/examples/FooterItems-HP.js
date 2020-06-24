@@ -1,6 +1,5 @@
 
 describe('Footer Parool', function() {
-  var hpurl = 'https://parool75:parool75@acc.parool.nl/'
   var hpurlprod = 'https://www.parool.nl/'
 
   before(() => {
