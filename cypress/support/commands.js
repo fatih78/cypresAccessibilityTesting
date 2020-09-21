@@ -1,4 +1,4 @@
-// ***********************************************
+1// ***********************************************
 // This example commands.js shows you how to
 // create various custom commands and overwrite
 // existing commands.
@@ -28,8 +28,10 @@ Cypress.Commands.add("disableCookiewallNL", function(brandDomain) {
       var NL_COOKIEWALL_VERSION = 'nl_cookiewall_version'
       var PWS = 'pws'
       var PWV = 'pwv'
+      var AUTHID = 'authId'
       var PWV_VALUE = "2"
       var PWS_VALUE = 'functional|analytics|content_recommendation|targeted_advertising|social_media'
+      var AUTHID_VALUE = '7d18804b-5084-4e18-b28d-d3e92a35a8d7'
 
     //set the cookies to disable cookiewall
       cy.setCookie(NL_COOKIEWALL_VERSION, '1', {
@@ -39,6 +41,9 @@ Cypress.Commands.add("disableCookiewallNL", function(brandDomain) {
           domain : brandDomain,
           path : '/'})
       cy.setCookie(PWV, PWV_VALUE, {
+          domain : brandDomain,
+          path : '/'})
+        cy.setCookie(AUTHID, AUTHID_VALUE, {
           domain : brandDomain,
           path : '/'})
 
@@ -49,8 +54,10 @@ Cypress.Commands.add("disableCookiewallBE", function(brandDomain) {
       var NL_COOKIEWALL_VERSION = 'nl_cookiewall_version'
       var PWS = 'pws'
       var PWV = 'pwv'
+      var AUTHID = 'authId'
       var PWV_VALUE = "1"
       var PWS_VALUE = 'functional|analytics|content_recommendation|targeted_advertising|social_media'
+      var AUTHID_VALUE = '31911e2e-c88c-4261-8794-c211d7e12182'
 
     //set the cookies to disable cookiewall
       cy.setCookie(NL_COOKIEWALL_VERSION, '1', {
@@ -60,6 +67,9 @@ Cypress.Commands.add("disableCookiewallBE", function(brandDomain) {
           domain : brandDomain,
           path : '/'})
       cy.setCookie(PWV, PWV_VALUE, {
+          domain : brandDomain,
+          path : '/'})
+              cy.setCookie(AUTHID, AUTHID_VALUE, {
           domain : brandDomain,
           path : '/'})
 
