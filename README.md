@@ -12,4 +12,9 @@ brew services stop jenkins-lts
 brew services start jenkins-lts
 brew services restart jenkins-lts
 
+from commandline:
+/Users/fatihtopcuoglu
+use command ./ngrok http 8080
+and copy-paste url in github > repositpry > settings > Webhooks > Payload url as "https://dfc2f53e215b.ngrok.io/github-webhook/"
+
 
