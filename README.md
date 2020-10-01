@@ -7,7 +7,7 @@
     * npx cypress run
     * docker-compose down
     
-# Jenkins stop, start en restart
+# Jenkins stop, start en restart from /Users/fatihtopcuoglu/.jenkins/war
 brew services stop jenkins-lts
 brew services start jenkins-lts
 brew services restart jenkins-lts
