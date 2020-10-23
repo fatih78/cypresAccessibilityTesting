@@ -18,16 +18,15 @@ const terminalLog = (violations) => {
   cy.task('table', violationData)
 }
 
-
 const routes = ['/'];
 
-describe('Component accessibility test HomePage wcag2a', () => {
+describe('Component accessibility test HomePage wcag2aa', () => {
   routes.forEach((route) => {
     const componentName = route.replace('.html', '');
     const testName = `${componentName} has no detectable accessibility violations on load`;
 
     it("NavBarWrapper", () => {
-    cy.disableCookiewall('.kindertelefoon.nl')
+      cy.disableCookiewall('.kindertelefoon.nl')
       cy.visit(route);
       cy.injectAxe();
 
@@ -37,7 +36,7 @@ cy.checkA11y(
   {
     runOnly: {
       type: 'tag',
-      values: ['wcag2a'],
+      values: ['wcag2aa'],
     },
   },
   terminalLog,
@@ -50,19 +49,18 @@ cy.checkA11y(
           cy.visit(route);
           cy.injectAxe();
 
-          cy.get('.module-wrapper').each((element, index) => {
-cy.checkA11y(
-  '.module-wrapper',
-  {
-    runOnly: {
-      type: 'tag',
-      values: ['wcag2a'],
-    },
-  },
-  terminalLog,
-);
-          });
-        });
+//          cy.get('.module-wrapper').each((element, index) => {
+//cy.checkA11y(
+//  '.module-wrapper',
+//  {
+//    runOnly: {
+//      type: 'tag',
+//      values: ['wcag2aa'],
+//    },
+//  },
+//  terminalLog,
+//);
+//          });
+//        });
   });
 });
-

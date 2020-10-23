@@ -18,21 +18,22 @@ const terminalLog = (violations) => {
   cy.task('table', violationData)
 }
 
+
 const routes = ['/'];
 
-describe('Component accessibility test HomePage wcag2aa', () => {
+describe('Component accessibility test HomePageBellen wcag2aa', () => {
   routes.forEach((route) => {
     const componentName = route.replace('.html', '');
     const testName = `${componentName} has no detectable accessibility violations on load`;
 
-    it("NavBarWrapper", () => {
-      cy.disableCookiewall('.kindertelefoon.nl')
+    it("HomePageBellen", () => {
+    cy.disableCookiewall('.kindertelefoon.nl')
       cy.visit(route);
       cy.injectAxe();
 
-      cy.get('.navbar-wrapper').each((element, index) => {
+      cy.get('#module-26 > .blend-mode-overlay').each((element, index) => {
 cy.checkA11y(
-  '.navbar-wrapper',
+  '#module-26 > .blend-mode-overlay',
   {
     runOnly: {
       type: 'tag',
@@ -43,24 +44,6 @@ cy.checkA11y(
 );
       });
     });
-
-        it("ModuleWappers", () => {
-        cy.disableCookiewall('.kindertelefoon.nl')
-          cy.visit(route);
-          cy.injectAxe();
-
-          cy.get('.module-wrapper').each((element, index) => {
-cy.checkA11y(
-  '.module-wrapper',
-  {
-    runOnly: {
-      type: 'tag',
-      values: ['wcag2aa'],
-    },
-  },
-  terminalLog,
-);
-          });
-        });
   });
 });
+
