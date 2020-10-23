@@ -1,7 +1,8 @@
 {
+  "baseUrl": "https://www.kindertelefoon.nl/",
+  "video": false,
   "projectId": "95y49u",
   "chromeWebSecurity": false,
-  "videosFolder" : "cypress/videos",
   "screenshotsFolder": "cypress/screenshots",
 
   "reporter": "cypress-multi-reporters",

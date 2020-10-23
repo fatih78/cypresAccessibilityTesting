@@ -1,5 +1,5 @@
 describe('Footer Kindertelefoon', function() {
-  var dmurlprod = 'https://www.kindertelefoon.nl/'
+  var url = 'https://www.kindertelefoon.nl/'
 
   before(() => {
   Cypress.Cookies.debug(true);
@@ -14,13 +14,13 @@ describe('Footer Kindertelefoon', function() {
       'spreekbeurt-of-werkstuk',
       'meedenken-overzicht',
       'veelgestelde-vragen',
-      '/privacy'
+      'privacy'
       )
 
-  it('DM Footer Headers', function() {
+  it('KinderTelefoon Footer Headers', function() {
 
-   cy.disableCookiewall('www.kindertelefoon.nl')
-    cy.visit(dmurlprod)
+   cy.disableCookiewall('.kindertelefoon.nl')
+    cy.visit(url)
 
       cy.get('.col-lg-11')
        .should('contain', 'Huisregels')
@@ -30,7 +30,7 @@ describe('Footer Kindertelefoon', function() {
        .should('contain', 'Privacy')
   })
 
-  it('DM Footer URLS', function()  {
+  it('KinderTelefoon Footer URLS', function()  {
     cy.get('.footer-links')
       .find('a')
         .should($a => {

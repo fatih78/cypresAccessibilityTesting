@@ -24,13 +24,12 @@
 // -- This is will overwrite an existing command --
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
 
-Cypress.Commands.add("disableCookiewall", function(brandDomain) {
-      var cookieLevel = "1"
-      var ci_session = 'iv84t1efd9nmfqqmari3gstsr99ed2rs'
-
+Cypress.Commands.add("disableCookiewall", function(brandDomain){
+      var cookieLevel = 'cookieLevel'
+      var cookieValue = "1"
 
     //set the cookies to disable cookiewall
-      cy.setCookie(cookieLevel, ci_session, {
+      cy.setCookie(cookieLevel, cookieValue, {
           domain : brandDomain,
           path : '/'})
 

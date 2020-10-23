@@ -1,0 +1,126 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-10-23T21:49:23.174Z",
+    "end": "2020-10-23T21:49:25.780Z",
+    "duration": 2606,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "68ece9ba-7c39-45b1-862c-3f952fdfc8b3",
+      "title": "",
+      "fullFile": "cypress/integration/examples/FooterItems-KinderTelefoon.js",
+      "file": "cypress/integration/examples/FooterItems-KinderTelefoon.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "9cc7e573-f339-409f-a1e6-e2a672811954",
+          "title": "Footer Kindertelefoon",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "KinderTelefoon Footer Headers",
+              "fullTitle": "Footer Kindertelefoon KinderTelefoon Footer Headers",
+              "timedOut": null,
+              "duration": 2457,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.disableCookiewall('.kindertelefoon.nl');\ncy.visit(url);\ncy.get('.col-lg-11').should('contain', 'Huisregels').should('contain', 'Spreekbeurt of werkstuk').should('contain', 'Meedenken').should('contain', 'Veelgestelde vragen').should('contain', 'Privacy');",
+              "err": {},
+              "uuid": "4fca7c81-4589-454e-967c-0c73f75bfa77",
+              "parentUUID": "9cc7e573-f339-409f-a1e6-e2a672811954",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "KinderTelefoon Footer URLS",
+              "fullTitle": "Footer Kindertelefoon KinderTelefoon Footer URLS",
+              "timedOut": null,
+              "duration": 90,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('.footer-links').find('a').should(function ($a) {\n  var hrefs = $a.map(function (i, el) {\n    return Cypress.$(el).attr('href');\n  });\n  expect(hrefs.get()).to.contain(footerurls);\n});",
+              "err": {},
+              "uuid": "2c19fa5e-7e2c-4933-9cb4-95422991aca5",
+              "parentUUID": "9cc7e573-f339-409f-a1e6-e2a672811954",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "4fca7c81-4589-454e-967c-0c73f75bfa77",
+            "2c19fa5e-7e2c-4933-9cb4-95422991aca5"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2547,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/json",
+        "overwrite": true,
+        "html": false,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "5.1.0"
+    }
+  }
+}

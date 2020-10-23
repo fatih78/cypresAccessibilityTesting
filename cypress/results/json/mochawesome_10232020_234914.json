@@ -1,0 +1,131 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 1,
+    "pending": 0,
+    "failures": 1,
+    "start": "2020-10-23T21:49:09.405Z",
+    "end": "2020-10-23T21:49:14.629Z",
+    "duration": 5224,
+    "testsRegistered": 2,
+    "passPercent": 50,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "fb9d8d47-0886-4c33-ae6f-225f7bc84dd9",
+      "title": "",
+      "fullFile": "cypress/integration/examples/AccessibilityHomePage_wcag2a.js",
+      "file": "cypress/integration/examples/AccessibilityHomePage_wcag2a.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "54415f68-5370-4b65-a6cb-998caaf7fb07",
+          "title": "Component accessibility test wcag2a",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "NavBarWrapper",
+              "fullTitle": "Component accessibility test wcag2a NavBarWrapper",
+              "timedOut": null,
+              "duration": 2497,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(route);\ncy.injectAxe();\ncy.get('.navbar-wrapper').each(function (element, index) {\n  cy.checkA11y('.navbar-wrapper', {\n    runOnly: {\n      type: 'tag',\n      values: ['wcag2a']\n    }\n  }, terminalLog);\n});",
+              "err": {},
+              "uuid": "892b7f73-a1ed-41c1-973f-42a71d859a46",
+              "parentUUID": "54415f68-5370-4b65-a6cb-998caaf7fb07",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "ModuleWappers",
+              "fullTitle": "Component accessibility test wcag2a ModuleWappers",
+              "timedOut": null,
+              "duration": 2163,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(route);\ncy.injectAxe();\ncy.get('.module-wrapper').each(function (element, index) {\n  cy.checkA11y('.module-wrapper', {\n    runOnly: {\n      type: 'tag',\n      values: ['wcag2a']\n    }\n  }, terminalLog);\n});",
+              "err": {
+                "message": "AssertionError: 1 accessibility violation was detected: expected 1 to equal 0",
+                "estack": "AssertionError: 1 accessibility violation was detected: expected 1 to equal 0\n    at Context.eval (https://www.kindertelefoon.nl/__cypress/tests?p=cypress/support/index.js:75:443712)",
+                "diff": null
+              },
+              "uuid": "01e99b55-bf40-4b94-9002-a5ebf5683eb7",
+              "parentUUID": "54415f68-5370-4b65-a6cb-998caaf7fb07",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "892b7f73-a1ed-41c1-973f-42a71d859a46"
+          ],
+          "failures": [
+            "01e99b55-bf40-4b94-9002-a5ebf5683eb7"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 4660,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/json",
+        "overwrite": true,
+        "html": false,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "5.1.0"
+    }
+  }
+}

@@ -16,11 +16,15 @@
 // Import commands.js using ES2015 syntax:
 import './commands'
 
+//Deze import zal alle functies injecteren die we nodig hebben voor onze A11y.
+import 'cypress-axe'
+
+
 Cypress.on('uncaught:exception', (err, runnable) => {
   // returning false here prevents Cypress from
   // failing the test
   return false
 })
 
-// Alternatively you can use CommonJS syntax:
-// require('./commands')
+
+
