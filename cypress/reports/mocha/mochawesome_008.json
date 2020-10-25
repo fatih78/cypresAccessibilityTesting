@@ -1,0 +1,111 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2020-10-25T12:22:50.307Z",
+    "end": "2020-10-25T12:22:56.304Z",
+    "duration": 5997,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "0b649ae1-1919-4c17-9210-c8f606c25bbc",
+      "title": "",
+      "fullFile": "cypress/integration/examples/AccessibilityHomePage_wcag2aa.js",
+      "file": "cypress/integration/examples/AccessibilityHomePage_wcag2aa.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "9c69af28-6671-4efb-a11c-e4a401bb76a1",
+          "title": "Component accessibility test HomePage wcag2aa",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "HomePage",
+              "fullTitle": "Component accessibility test HomePage wcag2aa HomePage",
+              "timedOut": null,
+              "duration": 4947,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.disableCookiewall('.kindertelefoon.nl');\ncy.visit(route);\ncy.injectAxe();\ncy.checkAccessibility(A11Y_OPTIONS);",
+              "err": {
+                "message": "AssertionError: 8 accessibility violations were detected: expected 8 to equal 0",
+                "estack": "AssertionError: 8 accessibility violations were detected: expected 8 to equal 0\n    at Context.eval (https://www.kindertelefoon.nl/__cypress/tests?p=cypress/support/index.js:231:443712)",
+                "diff": null
+              },
+              "uuid": "2832af10-d9ea-498a-87af-1a2a770325a1",
+              "parentUUID": "9c69af28-6671-4efb-a11c-e4a401bb76a1",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "2832af10-d9ea-498a-87af-1a2a770325a1"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 4947,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}

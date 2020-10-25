@@ -1,3 +1,44 @@
 {
-    "test": "cypress"
+    "test": "cypress",
+    "dependencies": {
+        "axe-core": "^4.0.2",
+        "cypress-axe": "^0.8.1"
+    },
+    "devDependencies": {
+        "concurrently": "^5.3.0",
+        "cypress": "4.8.0",
+        "cypress-cucumber-preprocessor": "^1.10.0",
+        "cypress-dark": "^1.7.10",
+        "cypress-file-upload": "^4.0.7",
+        "cypress-multi-reporters": "^1.4.0",
+        "cypress-xpath": "^1.6.0",
+        "mocha": "^7.1.2",
+        "mochawesome": "^6.1.1",
+        "mochawesome-merge": "^4.0.3",
+        "mochawesome-report-generator": "^5.1.0",
+        "wait-on": "^5.2.0"
+    },
+    "cypress-cucumber-preprocessor": {
+        "nonGlobalStepDefinitions": true
+    },
+    "cypress:ci": "concurrently \"cypress run\" --kill-others \"ng serve\" --success first",
+    "name": "dynamic-tests",
+    "version": "1.0.0",
+    "description": "Create Cypress tests dynamically from data",
+    "scripts": {
+        "cypress:open": "../../node_modules/.bin/cypress open",
+        "cypress:run": "../../node_modules/.bin/cypress run",
+        "test:ci": "npm run cypress:run",
+        "test:ci:windows": "bin-up cypress run",
+        "ci:serve": "ng build && http-server dist -p 8080",
+        "cy:ci": "start-server-and-test ci:serve http://localhost:8080 cy:run",
+        "cy:run": "node scripts/cypress.js",
+        "delete:reports": "del /F/Q/S cypress\\results\\*.*",
+        "prereport": "npm run delete:reports",
+        "report": "npx rm -rf mochawesome-report",
+        "combine-reports": "npx mochawesome-merge \"cypress/results/json/*.json\" > mochawesome.json",
+        "generate-report": "npx marge mochawesome.json",
+        "posttest": "npm run combine-reports && npm run generate-report",
+        "test" : "npm run scripts || npm run posttest"
+    }
 }

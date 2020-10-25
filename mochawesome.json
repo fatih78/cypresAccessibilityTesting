@@ -1,0 +1,405 @@
+{
+  "stats": {
+    "suites": 6,
+    "tests": 6,
+    "passes": 4,
+    "pending": 0,
+    "failures": 2,
+    "start": "2020-10-25T12:08:12.928Z",
+    "end": "2020-10-25T12:08:38.642Z",
+    "duration": 14498,
+    "testsRegistered": 6,
+    "passPercent": 66.66666666666667,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "729d5223-8975-4ed0-a5d6-b60b90462dad",
+      "title": "",
+      "fullFile": "cypress/integration/examples/AccessibilityHomePage_wcag2a.js",
+      "file": "cypress/integration/examples/AccessibilityHomePage_wcag2a.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "680bc001-0d10-493a-aabc-e842b29cc875",
+          "title": "Component accessibility test HomePage wcag2a",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "HomePage",
+              "fullTitle": "Component accessibility test HomePage wcag2a HomePage",
+              "timedOut": null,
+              "duration": 3803,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.disableCookiewall('.kindertelefoon.nl');\ncy.visit(route);\ncy.injectAxe();\ncy.checkAccessibility(A11Y_OPTIONS);",
+              "err": {
+                "message": "AssertionError: 8 accessibility violations were detected: expected 8 to equal 0",
+                "estack": "AssertionError: 8 accessibility violations were detected: expected 8 to equal 0\n    at Context.eval (https://www.kindertelefoon.nl/__cypress/tests?p=cypress/support/index.js:231:443712)",
+                "diff": null
+              },
+              "uuid": "d1e66726-6991-43e5-8a21-66a7047160db",
+              "parentUUID": "680bc001-0d10-493a-aabc-e842b29cc875",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "d1e66726-6991-43e5-8a21-66a7047160db"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 3803,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "fef0b5e7-d098-494d-8526-df11a8549f80",
+      "title": "",
+      "fullFile": "cypress/integration/examples/AccessibilityHomePage_wcag2aa.js",
+      "file": "cypress/integration/examples/AccessibilityHomePage_wcag2aa.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "40762003-1f29-4ddf-8711-66832b598bff",
+          "title": "Component accessibility test HomePage wcag2aa",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "HomePage",
+              "fullTitle": "Component accessibility test HomePage wcag2aa HomePage",
+              "timedOut": null,
+              "duration": 2975,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.disableCookiewall('.kindertelefoon.nl');\ncy.visit(route);\ncy.injectAxe();\ncy.checkAccessibility(A11Y_OPTIONS);",
+              "err": {
+                "message": "AssertionError: 8 accessibility violations were detected: expected 8 to equal 0",
+                "estack": "AssertionError: 8 accessibility violations were detected: expected 8 to equal 0\n    at Context.eval (https://www.kindertelefoon.nl/__cypress/tests?p=cypress/support/index.js:231:443712)",
+                "diff": null
+              },
+              "uuid": "5ad28078-cf7d-4ec0-b495-1c88ad62b05c",
+              "parentUUID": "40762003-1f29-4ddf-8711-66832b598bff",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "5ad28078-cf7d-4ec0-b495-1c88ad62b05c"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 2975,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "caf21f40-60e0-4ef1-b5f4-83fa20836be8",
+      "title": "",
+      "fullFile": "cypress/integration/examples/AccessibilityHomePageFooter_wcag2a.js",
+      "file": "cypress/integration/examples/AccessibilityHomePageFooter_wcag2a.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "3542447a-4baa-4e68-aa45-95655af0f70b",
+          "title": "Component accessibility test HomePage Footer wcag2a",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "HomePage",
+              "fullTitle": "Component accessibility test HomePage Footer wcag2a HomePage",
+              "timedOut": null,
+              "duration": 1911,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.disableCookiewall('.kindertelefoon.nl');\ncy.visit(route);\ncy.injectAxe();\ncy.get('.container-fluid > .justify-content-center').each(function (element, index) {\n  cy.checkA11y('.container-fluid > .justify-content-center', A11Y_OPTIONS);\n});",
+              "err": {},
+              "uuid": "7f80e9af-e5ff-467b-abd1-1069c6a4b29a",
+              "parentUUID": "3542447a-4baa-4e68-aa45-95655af0f70b",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "7f80e9af-e5ff-467b-abd1-1069c6a4b29a"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1911,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "52356a30-0b3b-41fb-83e3-644c35543c7c",
+      "title": "",
+      "fullFile": "cypress/integration/examples/AccessibilityHomePageFooter_wcag2aa.js",
+      "file": "cypress/integration/examples/AccessibilityHomePageFooter_wcag2aa.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "d9fcb714-0cef-4b2c-90f5-2342050398c9",
+          "title": "Component accessibility test HomePage Footer wcag2aa",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "HomePage",
+              "fullTitle": "Component accessibility test HomePage Footer wcag2aa HomePage",
+              "timedOut": null,
+              "duration": 1881,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.disableCookiewall('.kindertelefoon.nl');\ncy.visit(route);\ncy.injectAxe();\ncy.get('.container-fluid > .justify-content-center').each(function (element, index) {\n  cy.checkA11y('.container-fluid > .justify-content-center', A11Y_OPTIONS);\n});",
+              "err": {},
+              "uuid": "4b33231b-483b-43b3-aae3-e129da32f37c",
+              "parentUUID": "d9fcb714-0cef-4b2c-90f5-2342050398c9",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "4b33231b-483b-43b3-aae3-e129da32f37c"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1881,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "b0ef3f95-57fd-4251-b311-44ac72c67393",
+      "title": "",
+      "fullFile": "cypress/integration/examples/AccessibilityHomePageNavBar_wcag2a.js",
+      "file": "cypress/integration/examples/AccessibilityHomePageNavBar_wcag2a.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "d88ceafb-8e86-4d95-94b0-2c4d996c614f",
+          "title": "Component accessibility test HomePage NavBar wcag2a",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "HomePage",
+              "fullTitle": "Component accessibility test HomePage NavBar wcag2a HomePage",
+              "timedOut": null,
+              "duration": 1959,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.disableCookiewall('.kindertelefoon.nl');\ncy.visit(route);\ncy.injectAxe();\ncy.get('.navbar-wrapper').each(function (element, index) {\n  cy.checkA11y('.navbar-wrapper', A11Y_OPTIONS);\n});",
+              "err": {},
+              "uuid": "e77e810c-ee28-47b4-bb11-fc07a8d095bf",
+              "parentUUID": "d88ceafb-8e86-4d95-94b0-2c4d996c614f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "e77e810c-ee28-47b4-bb11-fc07a8d095bf"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1959,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "f4a02ab4-63a4-4be3-814b-59b5e8a79989",
+      "title": "",
+      "fullFile": "cypress/integration/examples/AccessibilityHomePageNavBar_wcag2aa.js",
+      "file": "cypress/integration/examples/AccessibilityHomePageNavBar_wcag2aa.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "71fa83df-3ae9-4e76-a59f-dc7e78f5dc34",
+          "title": "Component accessibility test HomePage NavBar wcag2a",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "HomePage",
+              "fullTitle": "Component accessibility test HomePage NavBar wcag2a HomePage",
+              "timedOut": null,
+              "duration": 1969,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.disableCookiewall('.kindertelefoon.nl');\ncy.visit(route);\ncy.injectAxe();\ncy.get('.navbar-wrapper').each(function (element, index) {\n  cy.checkA11y('.navbar-wrapper', A11Y_OPTIONS);\n});",
+              "err": {},
+              "uuid": "7df31510-4c96-49eb-8489-97e62d6c070c",
+              "parentUUID": "71fa83df-3ae9-4e76-a59f-dc7e78f5dc34",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "7df31510-4c96-49eb-8489-97e62d6c070c"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1969,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/json",
+        "overwrite": true,
+        "html": false,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "5.1.0"
+    }
+  }
+}

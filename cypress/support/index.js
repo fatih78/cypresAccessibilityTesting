@@ -16,7 +16,6 @@
 // Import commands.js using ES2015 syntax:
 import './commands'
 
-//Deze import zal alle functies injecteren die we nodig hebben voor onze A11y.
 import 'cypress-axe'
 
 
