@@ -3,11 +3,12 @@ const routes = ['/'];
  const A11Y_OPTIONS = {
     runOnly: {
               type: 'tag',
-              values: ['wcag2a'],
+              values: ['wcag2aa'],
             },
           }
 
-describe('Component accessibility test HomePage NavBar wcag2a', () => {
+
+describe('Component accessibility test HomePage wcag2aa', () => {
   routes.forEach((route) => {
     const componentName = route.replace('.html', '');
     const testName = `${componentName} has no detectable accessibility violations on load`;
@@ -16,10 +17,8 @@ describe('Component accessibility test HomePage NavBar wcag2a', () => {
     cy.disableCookiewall('.kindertelefoon.nl')
       cy.visit(route);
       cy.injectAxe();
-      cy.get('.navbar-wrapper').each((element, index) => {
-      cy.checkA11y('.navbar-wrapper', A11Y_OPTIONS);
-
+        cy.checkAccessibility(A11Y_OPTIONS);
       });
     });
 });
-});
+
