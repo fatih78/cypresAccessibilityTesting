@@ -8,13 +8,11 @@
   "reporter": "cypress-multi-reporters",
   "reporterOptions": {
     "reporterEnabled": "mochawesome",
-    "mochawesomeReporterOptions": {
-      "reportDir": "cypress/reports/mocha",
-      "quite": true,
-      "overwrite": false,
-      "html": false,
-      "json": true
-    }
+    "reportDir": "cypress/reports/mochawesome-report",
+    "overwrite": false,
+    "html": false,
+    "json": true,
+    "timestamp": "mmddyyyy_HHMMss"
   }
 }
 

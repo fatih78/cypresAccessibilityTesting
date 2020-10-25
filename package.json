@@ -26,19 +26,10 @@
     "version": "1.0.0",
     "description": "Create Cypress tests dynamically from data",
     "scripts": {
-        "cypress:open": "../../node_modules/.bin/cypress open",
-        "cypress:run": "../../node_modules/.bin/cypress run",
-        "test:ci": "npm run cypress:run",
-        "test:ci:windows": "bin-up cypress run",
-        "ci:serve": "ng build && http-server dist -p 8080",
-        "cy:ci": "start-server-and-test ci:serve http://localhost:8080 cy:run",
-        "cy:run": "node scripts/cypress.js",
-        "delete:reports": "del /F/Q/S cypress\\results\\*.*",
-        "prereport": "npm run delete:reports",
-        "report": "npx rm -rf mochawesome-report",
-        "combine-reports": "npx mochawesome-merge \"cypress/results/json/*.json\" > mochawesome.json",
-        "generate-report": "npx marge mochawesome.json",
-        "posttest": "npm run combine-reports && npm run generate-report",
-        "test" : "npm run scripts || npm run posttest"
+        "cleanup": "rm -fr cypress/reports/mochawesome-html-report",
+        "run": "npx rm -rf mochawesome-report",
+        "merge_reports": "npx mochawesome-merge \"cypress/results/json/*.json\" > mochawesome.json",
+        "mochawesome_report": "npx marge mochawesome.json",
+        "cy:report": "npm run run && npm run merge_reports && npm run mochawesome_report"
     }
 }

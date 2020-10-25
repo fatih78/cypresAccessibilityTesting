@@ -18,11 +18,9 @@ use command ./ngrok http 8080
 and copy-paste url in github > repositpry > settings > Webhooks > Payload url as "https://dfc2f53e215b.ngrok.io/github-webhook/"
 
 
-# Generate reporting
+# Generate MochaAweSome reporting
 npx cypress run
-npx rm -rf mochawesome-report
-npx mochawesome-merge "cypress/results/json/*.json" > mochawesome.json
-npx marge mochawesome.json
+npm run cy:report
 
 
 
