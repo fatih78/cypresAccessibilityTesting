@@ -2,14 +2,14 @@
   "stats": {
     "suites": 1,
     "tests": 1,
-    "passes": 0,
+    "passes": 1,
     "pending": 0,
-    "failures": 1,
-    "start": "2020-10-25T12:08:12.928Z",
-    "end": "2020-10-25T12:08:17.478Z",
-    "duration": 4550,
+    "failures": 0,
+    "start": "2020-10-25T13:15:22.086Z",
+    "end": "2020-10-25T13:15:24.785Z",
+    "duration": 2699,
     "testsRegistered": 1,
-    "passPercent": 0,
+    "passPercent": 100,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -18,17 +18,17 @@
   },
   "results": [
     {
-      "uuid": "729d5223-8975-4ed0-a5d6-b60b90462dad",
+      "uuid": "31fdd4b6-922d-4c6a-9add-cf55263030e9",
       "title": "",
-      "fullFile": "cypress/integration/examples/AccessibilityHomePage_wcag2a.js",
-      "file": "cypress/integration/examples/AccessibilityHomePage_wcag2a.js",
+      "fullFile": "cypress/integration/examples/AccessibilityHomePageNavBar_wcag2a.js",
+      "file": "cypress/integration/examples/AccessibilityHomePageNavBar_wcag2a.js",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-          "uuid": "680bc001-0d10-493a-aabc-e842b29cc875",
-          "title": "Component accessibility test HomePage wcag2a",
+          "uuid": "3216f18f-c147-4d94-a922-9ef55223a745",
+          "title": "Component accessibility test HomePage NavBar wcag2a",
           "fullFile": "",
           "file": "",
           "beforeHooks": [],
@@ -36,35 +36,31 @@
           "tests": [
             {
               "title": "HomePage",
-              "fullTitle": "Component accessibility test HomePage wcag2a HomePage",
+              "fullTitle": "Component accessibility test HomePage NavBar wcag2a HomePage",
               "timedOut": null,
-              "duration": 3803,
-              "state": "failed",
-              "speed": null,
-              "pass": false,
-              "fail": true,
+              "duration": 2667,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
               "pending": false,
               "context": null,
-              "code": "cy.disableCookiewall('.kindertelefoon.nl');\ncy.visit(route);\ncy.injectAxe();\ncy.checkAccessibility(A11Y_OPTIONS);",
-              "err": {
-                "message": "AssertionError: 8 accessibility violations were detected: expected 8 to equal 0",
-                "estack": "AssertionError: 8 accessibility violations were detected: expected 8 to equal 0\n    at Context.eval (https://www.kindertelefoon.nl/__cypress/tests?p=cypress/support/index.js:231:443712)",
-                "diff": null
-              },
-              "uuid": "d1e66726-6991-43e5-8a21-66a7047160db",
-              "parentUUID": "680bc001-0d10-493a-aabc-e842b29cc875",
+              "code": "cy.disableCookiewall('.kindertelefoon.nl');\ncy.visit(route);\ncy.injectAxe();\ncy.get('.navbar-wrapper').each(function (element, index) {\n  cy.checkA11y('.navbar-wrapper', A11Y_OPTIONS);\n});",
+              "err": {},
+              "uuid": "e61326d9-e383-40cd-b79b-c7b1464d6e54",
+              "parentUUID": "3216f18f-c147-4d94-a922-9ef55223a745",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
-          "passes": [],
-          "failures": [
-            "d1e66726-6991-43e5-8a21-66a7047160db"
+          "passes": [
+            "e61326d9-e383-40cd-b79b-c7b1464d6e54"
           ],
+          "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 3803,
+          "duration": 2667,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

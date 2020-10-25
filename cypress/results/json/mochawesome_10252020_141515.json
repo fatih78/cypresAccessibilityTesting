@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2020-10-25T12:08:24.574Z",
-    "end": "2020-10-25T12:08:26.508Z",
-    "duration": 1934,
+    "start": "2020-10-25T13:15:12.973Z",
+    "end": "2020-10-25T13:15:15.705Z",
+    "duration": 2732,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "caf21f40-60e0-4ef1-b5f4-83fa20836be8",
+      "uuid": "df309d9c-edc4-458f-b28c-60da5ed29995",
       "title": "",
       "fullFile": "cypress/integration/examples/AccessibilityHomePageFooter_wcag2a.js",
       "file": "cypress/integration/examples/AccessibilityHomePageFooter_wcag2a.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "3542447a-4baa-4e68-aa45-95655af0f70b",
+          "uuid": "2c775c99-e0bb-412c-8368-94e89d0aa354",
           "title": "Component accessibility test HomePage Footer wcag2a",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "HomePage",
               "fullTitle": "Component accessibility test HomePage Footer wcag2a HomePage",
               "timedOut": null,
-              "duration": 1911,
+              "duration": 2706,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "cy.disableCookiewall('.kindertelefoon.nl');\ncy.visit(route);\ncy.injectAxe();\ncy.get('.container-fluid > .justify-content-center').each(function (element, index) {\n  cy.checkA11y('.container-fluid > .justify-content-center', A11Y_OPTIONS);\n});",
               "err": {},
-              "uuid": "7f80e9af-e5ff-467b-abd1-1069c6a4b29a",
-              "parentUUID": "3542447a-4baa-4e68-aa45-95655af0f70b",
+              "uuid": "0bab1c24-234a-45d8-bd86-fc76e55fe074",
+              "parentUUID": "2c775c99-e0bb-412c-8368-94e89d0aa354",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "7f80e9af-e5ff-467b-abd1-1069c6a4b29a"
+            "0bab1c24-234a-45d8-bd86-fc76e55fe074"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 1911,
+          "duration": 2706,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

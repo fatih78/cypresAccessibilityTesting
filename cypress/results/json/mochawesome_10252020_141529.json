@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2020-10-25T12:08:31.540Z",
-    "end": "2020-10-25T12:08:33.532Z",
-    "duration": 1992,
+    "start": "2020-10-25T13:15:26.760Z",
+    "end": "2020-10-25T13:15:29.544Z",
+    "duration": 2784,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,16 +18,16 @@
   },
   "results": [
     {
-      "uuid": "b0ef3f95-57fd-4251-b311-44ac72c67393",
+      "uuid": "b8a041dc-55ba-4e6b-8cc9-1e1e924c48dc",
       "title": "",
-      "fullFile": "cypress/integration/examples/AccessibilityHomePageNavBar_wcag2a.js",
-      "file": "cypress/integration/examples/AccessibilityHomePageNavBar_wcag2a.js",
+      "fullFile": "cypress/integration/examples/AccessibilityHomePageNavBar_wcag2aa.js",
+      "file": "cypress/integration/examples/AccessibilityHomePageNavBar_wcag2aa.js",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-          "uuid": "d88ceafb-8e86-4d95-94b0-2c4d996c614f",
+          "uuid": "7a8e438c-a38d-4e70-8f28-a2fcfb3ad6d1",
           "title": "Component accessibility test HomePage NavBar wcag2a",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "HomePage",
               "fullTitle": "Component accessibility test HomePage NavBar wcag2a HomePage",
               "timedOut": null,
-              "duration": 1959,
+              "duration": 2746,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "cy.disableCookiewall('.kindertelefoon.nl');\ncy.visit(route);\ncy.injectAxe();\ncy.get('.navbar-wrapper').each(function (element, index) {\n  cy.checkA11y('.navbar-wrapper', A11Y_OPTIONS);\n});",
               "err": {},
-              "uuid": "e77e810c-ee28-47b4-bb11-fc07a8d095bf",
-              "parentUUID": "d88ceafb-8e86-4d95-94b0-2c4d996c614f",
+              "uuid": "26858665-8092-4194-8041-7757844fe846",
+              "parentUUID": "7a8e438c-a38d-4e70-8f28-a2fcfb3ad6d1",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "e77e810c-ee28-47b4-bb11-fc07a8d095bf"
+            "26858665-8092-4194-8041-7757844fe846"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 1959,
+          "duration": 2746,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
